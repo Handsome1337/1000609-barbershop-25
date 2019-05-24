@@ -3,6 +3,9 @@
 
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Барбершоп: Магазин</title>
   </head>
 
@@ -43,38 +46,38 @@
             <legend>Производители:</legend>
             <ul>
               <li class="filter-option">
-                <label>
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" checked>
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+                <label for="filter-baxter-of-california">
                   Baxter of California
                 </label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="mr-natty">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="mr-natty" id="filter-mr-natty">
+                <label for="filter-mr-natty">
                   mr Natty
                 </label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="suavecito" checked>
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="suavecito" id="filter-suavecito" checked>
+                <label for="filter-suavecito"> 
                   Suavecito
                 </label>  
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="malin-goetz">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="malin-goetz" id="filter-malin-goetz">
+                <label for="filter-malin-goetz"> 
                   Malin+Goetz
                 </label>  
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="murrays">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="murrays" id="filter-murrays">
+                <label for="filter-murrays"></label>
                   Murray's
                 </label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="american crew" checked>
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="american crew" id="fliter-american-crew" checked>
+                <label for="filter-american-crew"> 
                   American Crew
                 </label>
               </li>
@@ -84,20 +87,20 @@
             <legend>Группы товаров:</legend>
             <ul>
               <li class="filter-option">
-                <label>
-                  <input class="filter-input filter-input-radio" type="radio" name="product-group" value="shaving">
+                <input class="filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-shaving">
+                <label for="filter-shaving">
                   Бритвенные принадлежности
                 </label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="filter-input filter-input-radio" type="radio" name="product-group" value="care-products" checked>
+                <input class="filter-input filter-input-radio" type="radio" name="product-group" value="care-products" id="filter-care" checked>
+                <label for="filter-care">
                   Средства для ухода
                 </label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="filter-input filter-input-radio" type="radio" name="product-group" value="accessories">
+                <input class="filter-input filter-input-radio" type="radio" name="product-group" value="accessories" id="filter-accessories">
+                <label for="filter-accessories">
                   Аксессуары
                 </label>
               </li>
@@ -205,7 +208,7 @@
       </section>
       <ul class="pagination-list">
         <li class="page-number"><a href="#">1</a></li>
-        <li class="page-number pagination-number-current"><a>2</a></li>
+        <li class="page-number page-number-current"><a>2</a></li>
         <li class="page-number"><a href="#">3</a></li>
         <li class="page-number"><a href="#">4</a></li>
       </ul>
