@@ -34,12 +34,16 @@ a {
   background-color: #663d15;
 }
 
+.site-header {
+  background-color: #000000;
+}
+
+/*****Если бы логотип не входил в чёрную область, пришлось бы добавлять обёртки и меня фон у .site-header*****/
+
 .site-navigation {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-
-  background-color: #000000;
 }
 
 .site-navigation-list,
@@ -59,7 +63,7 @@ a {
   background-color: #242424;
 }
 
-.container h1 {
+.page-title {
   font-size: 30px;
   line-height: 42px;
 }
@@ -221,3 +225,129 @@ a {
   list-style: none;
 }
 
+
+/*****Делаем сетку*****/
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.site-header {
+  margin-bottom: 50px;
+}
+
+.site-navigation {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.site-header-logo {
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
+}
+
+.site-navigation-list {
+  width: 620px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-navigation {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  margin-left: auto;
+}
+
+.page-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+ .catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 180px;
+}
+
+.catalog {
+  width: 700px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+
+  list-style: none;
+}
+
+.catalog-item {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.site-footer {
+  padding: 60px 0;
+  margin-top: 45px;
+}
+
+.site-footer .container {
+  display: flex;
+}
+
+.contacts {
+  width: 330px;
+  margin: 0;
+  margin-right: 70px;
+}
+
+.social {
+  width: 145px;
+}
+
+.copyright {
+  width: 150px;
+  margin: 0;
+  margin-left: auto;
+}
+
+.product-photos {
+  width: 460px;
+}
+
+.product-info {
+  width: 390px;
+}
